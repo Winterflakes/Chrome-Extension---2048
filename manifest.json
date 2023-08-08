@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "2048 Game",
+  "version": "1.0",
+  "description": "A fun 2048 game Chrome extension",
+  "permissions": ["activeTab", "storage"],
+  "icons": {
+    "16": "joystick.png",
+    "48": "joystick.png",
+    "128": "joystick.png"
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": ["joystick.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "2048.html",
+    "default_icon": {
+      "16": "joystick.png",
+      "48": "joystick.png",
+      "128": "joystick.png"
+    }
+  }
+}
